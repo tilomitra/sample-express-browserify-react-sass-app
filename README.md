@@ -4,7 +4,8 @@ This repo contains an Express app that renders content with React. Uses Grunt to
 ## Installation
 * Clone the Repo
 * `npm install`
-* grunt
+* `grunt && grunt watch`
+* `nodemon -e handlebars,css,js server.js`
 * Go to [localhost:6565](http://localhost:6565) in your browser
 
 ---
