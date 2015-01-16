@@ -1,0 +1,34 @@
+body {
+  color: #111;
+  font-family: 'Merriweather', serif;
+  margin: 50px 30px; }
+
+code {
+  background: #ffee00;
+  color: #766519;
+  padding: 3px 5px;
+  border-radius: 4px; }
+
+hr {
+  margin: 40px 0;
+  border: 1px solid #ddd; }
+
+.Profile {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 10px; }
+  .Profile-title {
+    display: inline-block; }
+
+.Avatar {
+  display: inline-block;
+  float: left; }
+  .Avatar-img {
+    border-radius: 50px;
+    width: 64px;
+    height: auto;
+    margin-right: 15px; }
+
+/*# sourceMappingURL=app.css.map */

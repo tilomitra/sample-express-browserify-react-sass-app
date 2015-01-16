@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>{{title}}</title>
+
+    {{!-- If you dont want to use Pure, delete out the snippet below --}}
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <!--[if lte IE 8]>
+            {{addRemoteCSS "http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css"}}
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            {{addRemoteCSS "http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css"}}
+        <!--<![endif]-->
+
+    {{!-- 
+    If you want to use Bootstrap, uncomment the line below and delete the Pure CSS lines above.
+    {{addRemoteCSS "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"}}
+    --}}
+    {{addRemoteCSS "http://fonts.googleapis.com/css?family=Merriweather"}}
+    {{addLocalCSS "/build/app.css"}}
+
+    {{#remoteCSS}}
+    <link rel="stylesheet" href="{{{.}}}">
+    {{/remoteCSS}}
+
+    {{#localCSS}}
+      {{#if this.oldIE}}
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="{{{this.oldIE}}}">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="{{{this.path}}}">
+        <!--<![endif]-->
+      {{else}}
+        <link rel="stylesheet" href="{{{this.path}}}">
+      {{/if}}
+    {{/localCSS}}
+
+<body lang="en">
+    {{{body}}}
+    <div id="react-container"></div>
+
+    {{!-- Uncomment the line below if you want to use Bootstrap's JS modules --}}
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+    {{addLocalJS "/build/app.min.js"}}
+    {{#localJS}}
+        <script src="{{{.}}}"></script>
+    {{/localJS}}
+</body>
+
+</html>

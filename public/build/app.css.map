@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../src/css/app.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAMA;EACI,OAPQ;EAQR,aAPS;EAQT,QAAQ;;AAGZ;EACI,YAXa;EAYb,OAXQ;EAYR,SAAS;EACT,eAAe;;AAGnB;EACI,QAAQ;EACR,QAAQ;;AAGZ;EACI,QAAQ;EACR,eAAe;EACf,YAAY;EACZ,SAAS;EACT,SAAS;EAAb;IAGQ,SAAS;;AAIjB;EACI,SAAS;EACT,OAAO;EAAX;IAGQ,eAAe;IACf,OAAO;IACP,QAAQ;IACR,cAAc",
+	"names": []
+}

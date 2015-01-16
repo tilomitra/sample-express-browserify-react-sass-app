@@ -1,0 +1,47 @@
+$fontColor: #111;
+$fontFamily: 'Merriweather', serif;
+$codeBackground: rgb(255, 238, 0);
+$codeColor: #766519;
+
+
+body {
+    color: $fontColor;
+    font-family: $fontFamily;
+    margin: 50px 30px;
+}
+
+code {
+    background: $codeBackground;
+    color: $codeColor;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+hr {
+    margin: 40px 0;
+    border: 1px solid #ddd;
+}
+
+.Profile {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    display: inline-block;
+    padding: 10px;
+
+    &-title {
+        display: inline-block;
+    }
+}
+
+.Avatar {
+    display: inline-block;
+    float: left;
+
+    &-img {
+        border-radius: 50px;
+        width: 64px;
+        height: auto;
+        margin-right: 15px;
+    }
+}

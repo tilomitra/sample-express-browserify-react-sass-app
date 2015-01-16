@@ -1,0 +1,33 @@
+{
+  "name": "Bedrock",
+  "description": "A minimalist boilerplate for Express Apps",
+  "author": "Tilo Mitra <tilomitra@gmail.com>",
+  "version": "0.1.3",
+  "dependencies": {
+    "body-parser": "^1.6.3",
+    "cookie-parser": "^1.3.2",
+    "csurf": "^1.6.2",
+    "express": "4.x",
+    "express-cluster": "0.0.3",
+    "express-flash": "0.0.2",
+    "express-handlebars": "1.0.1",
+    "express-session": "^1.7.5",
+    "express-slash": "^2.0.1",
+    "express-state": "latest",
+    "handlebars": "^2.0.0-alpha.4",
+    "morgan": "^1.2.2",
+    "react": "^0.12.2",
+    "ypromise": "^0.2.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.3.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-react": "^0.10.0",
+    "grunt-sass": "^0.17.0",
+    "mocha": "*",
+    "should": "*",
+    "vows": "0.5.x"
+  },
+  "engine": "node >= 0.10.x"
+}
