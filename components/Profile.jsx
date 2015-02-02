@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 
-var React  = require('react');
+var React  = require('react/addons');
 var Avatar = require('./Avatar.jsx');
 var Bio    = require('./Bio.jsx');
 

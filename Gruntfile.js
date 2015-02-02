@@ -4,12 +4,7 @@ module.exports = function(grunt) {
 grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    watch: {
-        react: {
-            files: ['public/src/**/*.jsx', 'public/src/**/*.scss'],
-            tasks: ['default']
-        }
-    },
+
 
     sass: {
         options: {
@@ -27,7 +22,7 @@ grunt.initConfig({
             transform: [ gruntReact.browserify ]
         },
         client: {
-            src: ['public/src/js/components/**/*.jsx'],
+            src: ['components/**/*.jsx', 'public/src/js/main.js'],
             dest: 'public/build/app.min.js'
         }
     }

@@ -26,6 +26,7 @@
     "grunt-react": "^0.10.0",
     "grunt-sass": "^0.17.0",
     "mocha": "*",
+    "node-jsx": "^0.12.4",
     "should": "*",
     "vows": "0.5.x"
   },

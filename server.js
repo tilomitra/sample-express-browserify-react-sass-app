@@ -1,4 +1,6 @@
 //setup Dependencies
+require('node-jsx').install();
+
 var express  = require('express'),
 bodyParser   = require('body-parser'),
 cookieParser = require('cookie-parser'),
@@ -7,6 +9,8 @@ session      = require('express-session'),
 state        = require('express-state'),
 flash        = require('express-flash'),
 cluster      = require('express-cluster'),
+React        = require('react/addons'),
+ReactApp     = require('./components/App.jsx'),
 hbs          = require('./lib/exphbs'),
 routes       = require('./routes'),
 middleware   = require('./middleware'),
@@ -101,7 +105,12 @@ function setupServer (worker) {
 
     // The exposeTemplates() method makes the Handlebars templates that are inside /shared/templates/
     // available to the client.
-    router.get('/', [ middleware.exposeTemplates(), routes.render('home') ]);
+    router.get('/', function (req, res) {
+        var reactHtml = React.renderComponentToString(ReactApp({}));
+        res.render('home', {
+            reactOutput: reactHtml
+        });
+    });
 
     // Error handling middleware
     app.use(function(req, res, next){

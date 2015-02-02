@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 
-var React = require('react');
+var React = require('react/addons');
 var Avatar = React.createClass({
     render: function() {
         return (
